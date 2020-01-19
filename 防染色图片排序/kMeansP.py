@@ -36,4 +36,5 @@ for x in range(width):
         c2 = kmeans.cluster_centers_[label[x, y], 1]
         c3 = kmeans.cluster_centers_[label[x, y], 2]
         img.putpixel((x, y), (int(c1*256)-1, int(c2*256)-1, int(c3*256)-1))
+        #使用聚类中心的颜色来代替新的颜色
 img.save('part_3.jpg')
